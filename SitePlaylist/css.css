@@ -1,0 +1,120 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+}
+div{
+    position: absolute;
+    
+}
+body,main{
+    flex: 1 0 auto;
+}
+.hat-box{
+    width: 500px;
+    height: 200px;
+    transform: translate(-50%, -5%);
+    left: 50%;
+    top: 5%;
+    
+}
+.hat-txt{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+.playlist{
+    height: 50px;
+    width: 50px;
+    
+}
+.music-player{
+    width: 600px;
+    height: 250px;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    transform: translate(-50%, -55%);
+    left: 50%;
+    top: 55%;
+    border: 10px outset rgb(175, 82, 0);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.box-footer{
+/*position: fixed;*/
+height: 100px;
+bottom: 0;
+flex: 0 0 auto;
+width: 100%;
+/*background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+background-color: rgba(0, 0, 0, .5);
+/*inset <сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
+/*box-shadow: inset -10px 20px 200px 50px rgb(202, 150, 150);*/
+}
+
+
+
+.txt-footer{
+    height: 100px;
+    bottom: -30px;
+    top: 0px;
+    flex: 0 0 auto;
+    width: 100%;
+text-align: center;
+/*margin-top: 40px;*/
+color: rgb(71, 71, 71);
+position: relative;
+z-index: 1;
+/*margin-left: 45%;*/
+margin:0 auto;
+font-size: 20px;
+text-transform: uppercase;
+-webkit-transition: .2s ease !important ; /* Safari and Chrome */
+-moz-transition: .2s ease !important; /* Firefox 4 */
+-o-transition: .2s ease !important; /* Opera */
+/*box-shadow: inset 0 -5px 20px 10px rgb(165, 140, 159);*/
+border-top: 2px solid black;
+background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+}
+
+
+.shade-footer{
+    height: 100px;
+    bottom: 0;
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    z-index: 0;
+    
+}
+.shade-footer:hover {
+    background: rgb(255, 192, 213);
+    transition: .2s all linear ;
+    cursor: pointer;
+}
+.txt-footer:hover{
+    transition: all .2s linear  ;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    /*background-image: linear-gradient(to bottom, #feada6 0%, #f5efef 100%);*/
+    border-top: solid black;
+    transform: scale(1.1);
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+}
+/*footer:hover{
+    transition: .8s all;
+    cursor: pointer;
+    background: rgb(255, 0, 0);  
+}*/
