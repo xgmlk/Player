@@ -13,19 +13,19 @@ body{
     margin: 0;
     padding: 0;
 }
-div{
+/* div{
     position: absolute;
     
-}
+} */
 body,main{
     flex: 1 0 auto;
 }
 .hat-box{
-    width: 500px;
+    width: 100%;
     height: 200px;
-    transform: translate(-50%, -5%);
-    left: 50%;
-    top: 5%;
+    /* transform: translate(-50%, -5%); */
+    /* left: 50%; */
+    /* top: 5%; */
     
 }
 .hat-txt{
@@ -33,7 +33,7 @@ body,main{
     text-transform: uppercase;
     display: block;
 }
-.playlist{
+.pplaylist{
     height: 50px;
     width: 50px;
     
@@ -42,42 +42,24 @@ body,main{
     width: 600px;
     height: 250px;
     background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-    transform: translate(-50%, -55%);
-    left: 50%;
-    top: 55%;
+    /* transform: translate(-50%, -55%); */
+    left: 100%;
+    top: 100%;
     border: 10px outset rgb(175, 82, 0);
+    margin-left: 26%;
+    margin-top: 7%;
+}
+
+.player, .info {
+    width: 98%;
+    height: 3px;
+
+}
+.controls{
+    height: 60%;
 }
 
 
-/* приложение проигрывателя */
-
-.player { border: 1px solid #D0D0D0; background-color: #F0F0F0; height: 67px; border-radius: 2px; padding: 5px;}
-.player .tackinfo { float: left; margin-left: 0px; }
-.player .tackinfo #artist { color: #0474C0; font-weight: bold; }
-.player .tackinfo #title { color: #787878; }
-.player .timer { float: right;  cursor: pointer; }
-.player .seekbar { clear: both; cursor: pointer; padding: 5px 0;}
-.player .seekbar .wrap { background-color: #D0D0D0; overflow:hidden; height:5px; border-radius: 2px;}
-.player #buffer, .player #progress { height:100%; width:0%; }
-.player #buffer { background-color:#909090; }
-.player #progress { background-color: #0474C0; margin-top:-5px; }
-
-.controls .playback { float: left; }
-.controls .playback .fb { float: left; }
-.playback #play, .playback #backward, .playback #forward { color: #0474C0; cursor: pointer; border-radius: 2px; text-align: center; vertical-align: middle; float:left; margin-right: 2px;}
-.playback #play:hover, .playback #backward:hover, .playback #forward:hover { background-color: #D8D8D8; }
-.playback #play { font-size: 24px; height: 32px; width: 32px; line-height: 32px;}
-.playback #backward { font-size: 16px; height: 32px; width: 32px; line-height: 32px;}
-.playback #forward { font-size: 16px; height: 32px; width: 32px; line-height: 32px;}
-
-.volumebar { float: right; cursor: pointer; padding: 15px 0; width:80px;}
-.volumebar .wrap { background-color:#D8D8D8; overflow:hidden; height:5px; border-radius: 2px; }
-.volumebar #volumevalue { height:100%; width:0%; background-color: #0474C0; }
-footer{
-    display: flex;
-    flex-direction: column;
-}
-/* приложение КОНЕЦ КОДА */
 
 
 .box-footer{
